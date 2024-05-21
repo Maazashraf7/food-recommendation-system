@@ -1,7 +1,9 @@
 <?php
-if (isset($_POST['submit'])) {
-    require  '../wht2eat/write.php';
-}
+session_start();
+if (!isset($_SESSION['gmail']))
+    header("location:logn.php");
+
+$gmail = $_SESSION['gmail'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,19 +11,17 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hearty meals</title>
+    <title>Admin DashbordS</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
 </head>
 
-<body class="container-sm">
-    <h1> <b>HEARTY MEALS</b></h1>
-    <div class="container">
-
-        <h1> <b>HEARTY MEALS</b></h1>
-        <?php include '../wht2eat/login.php' ?>
-     
-</body>
-
-</html>
+<body class="container">
+    <header>
+       <?php require 'nav.php'?>
+               
+    </header>
+    <div class=" mt-5">
+        <h1>Patient Category </h1>
+    </div>

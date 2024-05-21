@@ -1,0 +1,41 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 100% of the viewport height */
+    background-image:  url(meals/bg7.avif);
+    background-size: cover; /* You can change this to 'contain' or other values based on your preference */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif; 
+}
+
+/* Example CSS styles, modify as needed */
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; /* Adjust the color as needed */
+  }
+  
+  .navbar-nav .nav-link {
+    color: white; /* Adjust the color as needed */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: yellow; /* Adjust the hover color as needed */
+  }
+  
+  .navbar-text .btn {
+    margin-top: 8px;
+  }
+  
+ 
